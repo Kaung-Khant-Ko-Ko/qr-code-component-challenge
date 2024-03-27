@@ -1,42 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+#container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(212, 45%, 89%);
 
-* {
-    margin: 0px;
-    padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
-    background: hsl(212, 45%, 89%);
-    font-family: "Outfit", sans-serif;
+.card {
+  width: 288px; /* 20% of the current viewport 1440px */
+  height: 467px; /* 60% of the current viewport 779px */
+  background-color: hsl(0, 0%, 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
 }
 
-#card {
-    background: hsl(0, 0%, 100%);
-    margin: 100px 550px;
-    width: 300px;
-    border-radius: 5%;
+.content {
+  width: 95%;
+  height: 95%;
 }
 
-div img {
-    padding: 20px;
-    width: 260px;
-    border-radius: 10%;
+img {
+  width: 100%;
+  border-radius: 5%;
 }
 
-#text {
-    text-align: center;
+h1,
+p {
+  margin: 15px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
 }
 
-div h1 {
-    padding: 0px 20px 0px 20px;
-    font-weight: 700;
-    color: hsl(218, 44%, 22%);
-    font-size: 20px;
+h1 {
+  font-weight: 700;
+  font-size: 21px;
+  color: hsl(218, 44%, 22%);
 }
 
-div p {
-    padding: 20px 25px 30px 25px;
-    font-weight: 400;
-    color: hsl(220, 15%, 55%);
-    font-size: 15px;
+p {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(220, 15%, 55%);
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 80%;
+  }
 }
